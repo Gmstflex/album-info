@@ -1,0 +1,82 @@
+<html>
+<head>
+  <link rel="stylesheet" href="coverflow.css" />
+  <link rel="stylesheet" href="Mystyle.css" />
+  <script src="jquery.min.js"></script>
+  <script src="sly.min.js"></script>
+  <script src="coverflow.js"></script>
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+  <div class="wrap" id="coverflow1">
+    <div class="scrollbar">
+      <div class="handle">
+        <div class="mousearea"></div>
+      </div>
+    </div>
+
+    <div class="frame coverflow">
+      <ul class="clearfix">
+        
+      </ul>
+    </div>
+
+    <ul class="pages"></ul>
+  </div>
+
+  <div>
+    <img align="right" src="albumlogo.png" width="150" height="100"><br><br><p><br>
+    <hr width="1000">
+    <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#.html">Find album</a> |
+    <hr width="1000">
+    <h1>ALBUM INFO ZONE</h1>
+    <p>
+      <ul class="navbar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Find album</li>
+      </ul>
+      <table border="5">
+        <tr>
+          <td><img src="album1.jpg" width="250" height="250" alt="album 1"></td>
+          <td><img src="album2.jpg" width="250" height="250" alt="album 2"></td>
+          <td><img src="album3.jpg" width="250" height="250" alt="album 3"></td>
+        </tr>
+        <tr>
+          <td align="center"><font type="comic sans" color="green">Photo of myself</font></td>
+          <td><font type="comic sans" color="green">Her Loss - Drake</font></td>
+          <td><font type="comic sans" color="green">Unreal Unearth - Hozier</font></td>
+        </tr>
+        <tr>
+          <td><img src="album4.jpg" width="250" height="250" alt="album 4"></td>
+          <td><img src="album5.jpg" width="250" height="250" alt="album 5"></td>
+          <td><img src="album6.jpg" width="250" height="250" alt="album 6"></td>
+        </tr>
+        <tr>
+		  <td align="center"><font type="comic sans" color="green">The Last Goodbye - Odesza</font></td>
+          <td><font type="comic sans" color="green">Beautiful and Brutal Yard - J Hus</font></td>
+          <td><font type="comic sans" color="green">For All the Dogs - Drake</font></td>
+        </tr>
+      </table>
+      <p>Our offices are located at 5151 State University Drive, Los Angeles, CA</p>
+    </p>
+  </div>
+
+  <script>
+
+    coverflowimages({
+        coverid: 'coverflow1',
+        images: [
+            ['album1.jpg', 'album1.jpg', 'album 1 Description'],
+            ['album2.jpg', 'album2.jpg', 'album 2 Description'],
+            ['album3.jpg', 'album3.jpg', 'album 3 Description'],
+            ['album4.jpg', 'album4.jpg', 'album 4 Description'],
+            ['album5.jpg', 'album5.jpg', 'album 5 Description'],
+			['album6.jpg', 'album6.jpg', 'album 6 Description']
+        ]
+    });
+  </script>
+</body>
+
+</html>
